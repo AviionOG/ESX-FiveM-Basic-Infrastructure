@@ -1,0 +1,199 @@
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background: none;
+  overflow: hidden;
+  user-select: none;
+  justify-content: center;
+  color: #c9d1d9;
+}
+
+input {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  height: 35px;
+  margin: 0;
+  border-radius: 0;
+  outline: 0;
+  margin-right: 5px;
+  padding: 15px;
+  color: #fff;
+}
+
+.tablet {
+  display: none;
+  background: #06090f;
+  width: 800px;
+  height: 80%;
+  flex-direction: column;
+  position: relative;
+  border-radius: 3px;
+}
+
+.top-text {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.depolar {
+  padding: 5px;
+  overflow: auto;
+}
+
+.depo-tablo {
+  border-bottom: 1px solid #30363d;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.depo-tablo:hover {
+  background: #0d1117;
+}
+
+.depo-tablo-sol {
+  display: flex;
+  align-items: center;
+  width: 625px;
+}
+
+.depo-id {
+  padding-right: 15px;
+}
+
+.depo-button {
+  background: #0d1117;
+  padding: 5px 10px;
+  border: 1px solid #21262d;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.tablet-top {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background: #161b22;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tablet-top-button-x {
+  background: #800000;
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #420a0a;
+}
+
+.tablet-top-button {
+  background: #0d1117;
+  height: 35px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 1px solid #21262d;
+}
+
+.tablet-top-button-x:hover {
+  border: 1px solid #ad2020;
+  cursor: pointer;
+}
+
+.tablet-top-button-x:active {
+  background: #c11a1a;
+}
+
+.depo-button:hover, .tablet-top-button:hover {
+  border: 1px solid #8b949e;
+  cursor: pointer;
+}
+
+.depo-button:active, .tablet-top-button:active {
+  background: #30363d;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #06090f;
+}
+
+::-webkit-scrollbar-track {
+  background: #06090f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+}
+
+.satin-al, .ac-menu {
+  position: absolute;
+  background: #161b22;
+  border-radius: 3px;
+  width: 350px;
+  z-index: 1;
+  padding: 10px;
+  display: none;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%); 
+}
+
+.satin-al-ust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.satin-al-orta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#depo-ismi, #depo-sifre {
+  width: 100%;
+}
+
+.satin-al-menu-button {
+  margin: 0;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: 0;
+  width: 250px;
+}
+
+.ac-menu-button {
+  width: 150px;
+}
+
+.satin-al-menu-button:hover .ac-menu-button:hover {
+  border-left: 0;
+}
+
+.depo-sifre-isim {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.depo-ismi {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
