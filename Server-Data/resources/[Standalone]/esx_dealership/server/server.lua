@@ -27,10 +27,10 @@ end)
 
 
 
-ESX.RegisterServerCallback('vehicleshop.isPlateTaken', function (source, cb, plate)
-	exports.ghmattimysql:execute('SELECT * FROM owned_vehicles WHERE plate = @plate', {
+ESX.RegisterServerCallback('esx_vehicleshop:isPlateTaken', function(source, cb, plate)
+	exports.ghmattimysql:execute('SELECT 1 FROM owned_vehicles WHERE plate = @plate', {
 		['@plate'] = plate
-	}, function (result)
+	}, function(result)
 		cb(result[1] ~= nil)
 	end)
 end)
